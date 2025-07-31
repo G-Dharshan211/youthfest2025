@@ -25,10 +25,10 @@ const ContactSection: React.FC = () => {
     <section id="contact" className="py-20 px-4 bg-gray-900">
       <div className="container mx-auto">
         <div className="text-center mb-16">
-          <h2 className="text-4xl md:text-6xl font-bold text-yellow-400 mb-4">
+          <h2 className="text-4xl md:text-6xl font-bold text-[#FFCB61] mb-4">
             Get In Touch
           </h2>
-          <p className="text-yellow-200 text-lg max-w-3xl mx-auto">
+          <p className="text-[#77BEF0] text-lg max-w-3xl mx-auto">
             Have questions about Youth Fest 2025? Need help with registration? We're here to help!
           </p>
         </div>
@@ -37,62 +37,62 @@ const ContactSection: React.FC = () => {
           {/* Contact Information */}
           <div className="space-y-8">
             <div>
-              <h3 className="text-2xl font-bold text-yellow-400 mb-6">Contact Information</h3>
+              <h3 className="text-2xl font-bold text-[#FFCB61] mb-6">Contact Information</h3>
               <div className="space-y-4">
-                <div className="flex items-center text-yellow-200">
-                  <Mail className="w-6 h-6 text-yellow-400 mr-4" />
+                <div className="flex items-center text-[#77BEF0]">
+                  <Mail className="w-6 h-6 text-[#FFCB61] mr-4" />
                   <div>
                     <p className="font-medium">Email</p>
-                    <p className="text-yellow-300">info@youthfest2025.com</p>
+                    <p className="text-[#FF894F]">info@youthfest2025.com</p>
                   </div>
                 </div>
-                <div className="flex items-center text-yellow-200">
-                  <Phone className="w-6 h-6 text-yellow-400 mr-4" />
+                <div className="flex items-center text-[#77BEF0]">
+                  <Phone className="w-6 h-6 text-[#FFCB61] mr-4" />
                   <div>
                     <p className="font-medium">Phone</p>
-                    <p className="text-yellow-300">+1 (555) 123-4567</p>
+                    <p className="text-[#FF894F]">+1 (555) 123-4567</p>
                   </div>
                 </div>
-                <div className="flex items-center text-yellow-200">
-                  <MapPin className="w-6 h-6 text-yellow-400 mr-4" />
+                <div className="flex items-center text-[#77BEF0]">
+                  <MapPin className="w-6 h-6 text-[#FFCB61] mr-4" />
                   <div>
                     <p className="font-medium">Location</p>
-                    <p className="text-yellow-300">Youth Convention Center<br />123 Festival Street, City</p>
+                    <p className="text-[#FF894F]">Youth Convention Center<br />123 Festival Street, City</p>
                   </div>
                 </div>
               </div>
             </div>
 
             <div>
-              <h4 className="text-xl font-bold text-yellow-400 mb-4">Follow Us</h4>
+              <h4 className="text-xl font-bold text-[#FFCB61] mb-4">Follow Us</h4>
               <div className="flex space-x-4">
-                <a href="#" className="bg-gray-800 p-3 rounded-full text-yellow-400 hover:bg-yellow-400 hover:text-gray-900 transition-all duration-300 transform hover:scale-110">
+                <a href="#" className="bg-gray-800 p-3 rounded-full text-[#FFCB61] hover:bg-[#FFCB61] hover:text-gray-900 transition-all duration-300 transform hover:scale-110">
                   <Instagram className="w-6 h-6" />
                 </a>
-                <a href="#" className="bg-gray-800 p-3 rounded-full text-yellow-400 hover:bg-yellow-400 hover:text-gray-900 transition-all duration-300 transform hover:scale-110">
+                <a href="#" className="bg-gray-800 p-3 rounded-full text-[#77BEF0] hover:bg-[#77BEF0] hover:text-gray-900 transition-all duration-300 transform hover:scale-110">
                   <Twitter className="w-6 h-6" />
                 </a>
-                <a href="#" className="bg-gray-800 p-3 rounded-full text-yellow-400 hover:bg-yellow-400 hover:text-gray-900 transition-all duration-300 transform hover:scale-110">
+                <a href="#" className="bg-gray-800 p-3 rounded-full text-[#FF894F] hover:bg-[#FF894F] hover:text-gray-900 transition-all duration-300 transform hover:scale-110">
                   <Facebook className="w-6 h-6" />
                 </a>
               </div>
             </div>
 
-            <div className="bg-gray-800 rounded-lg p-6 border border-yellow-500/20">
-              <h4 className="text-yellow-400 font-semibold mb-3">Event Dates</h4>
-              <p className="text-yellow-200 text-sm mb-2">March 15-22, 2025</p>
-              <p className="text-yellow-300 text-sm">
+            <div className="bg-gray-800 rounded-lg p-6 border border-[#FFCB61]/20">
+              <h4 className="text-[#FFCB61] font-semibold mb-3">Event Dates</h4>
+              <p className="text-[#77BEF0] text-sm mb-2">March 15-22, 2025</p>
+              <p className="text-[#FF894F] text-sm">
                 Join us for an unforgettable week of creativity, competition, and community!
               </p>
             </div>
           </div>
 
           {/* Contact Form */}
-          <div className="bg-gray-800 rounded-xl p-8 border border-yellow-500/20">
-            <h3 className="text-2xl font-bold text-yellow-400 mb-6">Send Us a Message</h3>
+          <div className="bg-gray-800 rounded-xl p-8 border border-[#FFCB61]/20">
+            <h3 className="text-2xl font-bold text-[#FFCB61] mb-6">Send Us a Message</h3>
             <form onSubmit={handleSubmit} className="space-y-6">
               <div>
-                <label className="block text-yellow-200 text-sm font-medium mb-2">
+                <label className="block text-[#77BEF0] text-sm font-medium mb-2">
                   Your Name *
                 </label>
                 <input
@@ -101,13 +101,13 @@ const ContactSection: React.FC = () => {
                   value={formData.name}
                   onChange={handleChange}
                   required
-                  className="w-full px-4 py-3 bg-gray-700 border border-yellow-500/30 rounded-lg text-yellow-100 focus:border-yellow-400 focus:outline-none transition-colors"
+                  className="w-full px-4 py-3 bg-gray-700 border border-[#FFCB61]/30 rounded-lg text-[#77BEF0] focus:border-[#FFCB61] focus:outline-none transition-colors"
                   placeholder="Enter your name"
                 />
               </div>
 
               <div>
-                <label className="block text-yellow-200 text-sm font-medium mb-2">
+                <label className="block text-[#77BEF0] text-sm font-medium mb-2">
                   Email Address *
                 </label>
                 <input
@@ -116,13 +116,13 @@ const ContactSection: React.FC = () => {
                   value={formData.email}
                   onChange={handleChange}
                   required
-                  className="w-full px-4 py-3 bg-gray-700 border border-yellow-500/30 rounded-lg text-yellow-100 focus:border-yellow-400 focus:outline-none transition-colors"
+                  className="w-full px-4 py-3 bg-gray-700 border border-[#FFCB61]/30 rounded-lg text-[#77BEF0] focus:border-[#FFCB61] focus:outline-none transition-colors"
                   placeholder="Enter your email"
                 />
               </div>
 
               <div>
-                <label className="block text-yellow-200 text-sm font-medium mb-2">
+                <label className="block text-[#77BEF0] text-sm font-medium mb-2">
                   Message *
                 </label>
                 <textarea
@@ -131,14 +131,14 @@ const ContactSection: React.FC = () => {
                   onChange={handleChange}
                   required
                   rows={5}
-                  className="w-full px-4 py-3 bg-gray-700 border border-yellow-500/30 rounded-lg text-yellow-100 focus:border-yellow-400 focus:outline-none transition-colors resize-none"
+                  className="w-full px-4 py-3 bg-gray-700 border border-[#FFCB61]/30 rounded-lg text-[#77BEF0] focus:border-[#FFCB61] focus:outline-none transition-colors resize-none"
                   placeholder="Tell us how we can help you..."
                 />
               </div>
 
               <button
                 type="submit"
-                className="w-full bg-yellow-500 text-gray-900 py-3 rounded-lg font-semibold hover:bg-yellow-400 transition-all duration-300 transform hover:scale-105 flex items-center justify-center"
+                className="w-full bg-[#FFCB61] text-gray-900 py-3 rounded-lg font-semibold hover:bg-[#FF894F] transition-all duration-300 transform hover:scale-105 flex items-center justify-center"
               >
                 <Send className="w-5 h-5 mr-2" />
                 Send Message

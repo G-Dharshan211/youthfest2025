@@ -38,33 +38,33 @@ const CountdownTimer: React.FC = () => {
     <div className="bg-gray-900/80 backdrop-blur-sm rounded-2xl p-8 border border-yellow-500/30 shadow-2xl">
       <div className="text-center mb-6">
         <div className="flex items-center justify-center mb-2">
-          <Calendar className="w-6 h-6 text-yellow-400 mr-2" />
-          <h3 className="text-2xl font-bold text-yellow-400">Event Countdown</h3>
+          <Calendar className="w-6 h-6 text-[#FFCB61] mr-2" />
+          <h3 className="text-2xl font-bold text-[#FFCB61]">Event Countdown</h3>
         </div>
-        <p className="text-yellow-200">Youth Fest 2025 begins in:</p>
+        <p className="text-[#77BEF0]">Youth Fest 2025 begins in:</p>
       </div>
       
       <div className="grid grid-cols-4 gap-4 text-center">
-        <div className="bg-yellow-500/10 rounded-lg p-4 border border-yellow-500/20">
-          <div className="text-3xl font-bold text-yellow-400">{timeLeft.days}</div>
-          <div className="text-yellow-200 text-sm">Days</div>
+        <div className="bg-[#FFCB61]/10 rounded-lg p-4 border border-[#FFCB61]/20">
+          <div className="text-3xl font-bold text-[#FFCB61]">{timeLeft.days}</div>
+          <div className="text-[#77BEF0] text-sm">Days</div>
         </div>
-        <div className="bg-yellow-500/10 rounded-lg p-4 border border-yellow-500/20">
-          <div className="text-3xl font-bold text-yellow-400">{timeLeft.hours}</div>
-          <div className="text-yellow-200 text-sm">Hours</div>
+        <div className="bg-[#FFCB61]/10 rounded-lg p-4 border border-[#FFCB61]/20">
+          <div className="text-3xl font-bold text-[#FFCB61]">{timeLeft.hours}</div>
+          <div className="text-[#77BEF0] text-sm">Hours</div>
         </div>
-        <div className="bg-yellow-500/10 rounded-lg p-4 border border-yellow-500/20">
-          <div className="text-3xl font-bold text-yellow-400">{timeLeft.minutes}</div>
-          <div className="text-yellow-200 text-sm">Minutes</div>
+        <div className="bg-[#FFCB61]/10 rounded-lg p-4 border border-[#FFCB61]/20">
+          <div className="text-3xl font-bold text-[#FFCB61]">{timeLeft.minutes}</div>
+          <div className="text-[#77BEF0] text-sm">Minutes</div>
         </div>
-        <div className="bg-yellow-500/10 rounded-lg p-4 border border-yellow-500/20">
-          <div className="text-3xl font-bold text-yellow-400">{timeLeft.seconds}</div>
-          <div className="text-yellow-200 text-sm">Seconds</div>
+        <div className="bg-[#FFCB61]/10 rounded-lg p-4 border border-[#FFCB61]/20">
+          <div className="text-3xl font-bold text-[#FFCB61]">{timeLeft.seconds}</div>
+          <div className="text-[#77BEF0] text-sm">Seconds</div>
         </div>
       </div>
       
       <div className="mt-6 text-center">
-        <div className="flex items-center justify-center text-yellow-300">
+        <div className="flex items-center justify-center text-[#FF894F]">
           <Clock className="w-4 h-4 mr-2" />
           <span className="text-sm">August 11, 2025 • Don't miss out!</span>
         </div>

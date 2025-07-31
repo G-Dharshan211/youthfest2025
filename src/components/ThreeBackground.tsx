@@ -33,13 +33,13 @@ const ThreeBackground: React.FC = () => {
 
     // Yellow and gold color palette
     const yellowPalette = [
-      new THREE.Color(0xFEF3C7), // Light yellow
-      new THREE.Color(0xFDE68A), // Yellow-200
-      new THREE.Color(0xF59E0B), // Yellow-500
-      new THREE.Color(0xD97706), // Yellow-600
-      new THREE.Color(0xB45309), // Yellow-700
-      new THREE.Color(0xFFD700), // Gold
-      new THREE.Color(0xFFA500)  // Orange
+      new THREE.Color(0x77BEF0), // Light blue
+      new THREE.Color(0xFFCB61), // Yellow
+      new THREE.Color(0xFF894F), // Orange
+      new THREE.Color(0xEA5B6F), // Pink/Red
+      new THREE.Color(0x5DADE2), // Lighter blue
+      new THREE.Color(0xF7DC6F), // Lighter yellow
+      new THREE.Color(0xF1948A)  // Lighter pink
     ];
 
     for (let i = 0; i < particleCount; i++) {

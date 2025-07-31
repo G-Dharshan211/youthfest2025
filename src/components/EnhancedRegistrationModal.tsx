@@ -125,11 +125,11 @@ const EnhancedRegistrationModal: React.FC<EnhancedRegistrationModalProps> = ({ e
       <div className="fixed inset-0 bg-black/80 flex items-center justify-center z-50 p-4">
         <div className="bg-gray-900 rounded-xl max-w-md w-full p-8 text-center border border-yellow-500/20">
           <CheckCircle className="w-16 h-16 text-green-400 mx-auto mb-4" />
-          <h2 className="text-2xl font-bold text-yellow-400 mb-2">Registration Successful!</h2>
-          <p className="text-yellow-200 mb-4">
+          <h2 className="text-2xl font-bold text-[#FFCB61] mb-2">Registration Successful!</h2>
+          <p className="text-[#77BEF0] mb-4">
             Thank you for registering for {event.title}. We've sent a confirmation to your email.
           </p>
-          <div className="animate-pulse text-yellow-300 text-sm">
+          <div className="animate-pulse text-[#FF894F] text-sm">
             Closing automatically...
           </div>
         </div>
@@ -143,20 +143,20 @@ const EnhancedRegistrationModal: React.FC<EnhancedRegistrationModalProps> = ({ e
         <div className="relative p-6 border-b border-yellow-500/20">
           <button
             onClick={onClose}
-            className="absolute top-4 right-4 text-yellow-400 hover:text-yellow-300 transition-colors"
+            className="absolute top-4 right-4 text-[#FFCB61] hover:text-[#FF894F] transition-colors"
           >
             <X className="w-6 h-6" />
           </button>
           <div className="text-center">
-            <h2 className="text-3xl font-bold text-yellow-400 mb-2">Join the Movement</h2>
-            <p className="text-yellow-200">Register for Youth Fest 2025 and be part of something special</p>
+            <h2 className="text-3xl font-bold text-[#FFCB61] mb-2">Join the Movement</h2>
+            <p className="text-[#77BEF0]">Register for Youth Fest 2025 and be part of something special</p>
           </div>
         </div>
 
         <form onSubmit={handleSubmit} className="p-6 space-y-6">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
             <div>
-              <label className="block text-yellow-200 text-sm font-medium mb-2">
+              <label className="block text-[#77BEF0] text-sm font-medium mb-2">
                 <User className="w-4 h-4 inline mr-2" />
                 Full Name *
               </label>
@@ -166,7 +166,7 @@ const EnhancedRegistrationModal: React.FC<EnhancedRegistrationModalProps> = ({ e
                 value={formData.name}
                 onChange={handleChange}
                 className={`w-full px-4 py-3 bg-gray-800 border rounded-lg text-yellow-100 focus:outline-none transition-colors ${
-                  errors.name ? 'border-red-500' : 'border-yellow-500/30 focus:border-yellow-400'
+                  errors.name ? 'border-red-500' : 'border-[#FFCB61]/30 focus:border-[#FFCB61]'
                 }`}
                 placeholder="Enter your full name"
               />
@@ -174,7 +174,7 @@ const EnhancedRegistrationModal: React.FC<EnhancedRegistrationModalProps> = ({ e
             </div>
 
             <div>
-              <label className="block text-yellow-200 text-sm font-medium mb-2">
+              <label className="block text-[#77BEF0] text-sm font-medium mb-2">
                 <Mail className="w-4 h-4 inline mr-2" />
                 Email Address *
               </label>
@@ -184,7 +184,7 @@ const EnhancedRegistrationModal: React.FC<EnhancedRegistrationModalProps> = ({ e
                 value={formData.email}
                 onChange={handleChange}
                 className={`w-full px-4 py-3 bg-gray-800 border rounded-lg text-yellow-100 focus:outline-none transition-colors ${
-                  errors.email ? 'border-red-500' : 'border-yellow-500/30 focus:border-yellow-400'
+                  errors.email ? 'border-red-500' : 'border-[#FFCB61]/30 focus:border-[#FFCB61]'
                 }`}
                 placeholder="Enter your email"
               />
@@ -192,7 +192,7 @@ const EnhancedRegistrationModal: React.FC<EnhancedRegistrationModalProps> = ({ e
             </div>
 
             <div>
-              <label className="block text-yellow-200 text-sm font-medium mb-2">
+              <label className="block text-[#77BEF0] text-sm font-medium mb-2">
                 <Phone className="w-4 h-4 inline mr-2" />
                 Phone Number *
               </label>
@@ -202,7 +202,7 @@ const EnhancedRegistrationModal: React.FC<EnhancedRegistrationModalProps> = ({ e
                 value={formData.phone}
                 onChange={handleChange}
                 className={`w-full px-4 py-3 bg-gray-800 border rounded-lg text-yellow-100 focus:outline-none transition-colors ${
-                  errors.phone ? 'border-red-500' : 'border-yellow-500/30 focus:border-yellow-400'
+                  errors.phone ? 'border-red-500' : 'border-[#FFCB61]/30 focus:border-[#FFCB61]'
                 }`}
                 placeholder="Enter your phone number"
               />
@@ -210,7 +210,7 @@ const EnhancedRegistrationModal: React.FC<EnhancedRegistrationModalProps> = ({ e
             </div>
 
             <div>
-              <label className="block text-yellow-200 text-sm font-medium mb-2">
+              <label className="block text-[#77BEF0] text-sm font-medium mb-2">
                 <Building className="w-4 h-4 inline mr-2" />
                 College / Organization
               </label>
@@ -219,13 +219,13 @@ const EnhancedRegistrationModal: React.FC<EnhancedRegistrationModalProps> = ({ e
                 name="college"
                 value={formData.college}
                 onChange={handleChange}
-                className="w-full px-4 py-3 bg-gray-800 border border-yellow-500/30 rounded-lg text-yellow-100 focus:border-yellow-400 focus:outline-none transition-colors"
+                className="w-full px-4 py-3 bg-gray-800 border border-[#FFCB61]/30 rounded-lg text-yellow-100 focus:border-[#FFCB61] focus:outline-none transition-colors"
                 placeholder="Enter your college or organization"
               />
             </div>
 
             <div>
-              <label className="block text-yellow-200 text-sm font-medium mb-2">
+              <label className="block text-[#77BEF0] text-sm font-medium mb-2">
                 <Calendar className="w-4 h-4 inline mr-2" />
                 Age *
               </label>
@@ -237,7 +237,7 @@ const EnhancedRegistrationModal: React.FC<EnhancedRegistrationModalProps> = ({ e
                 min="16"
                 max="30"
                 className={`w-full px-4 py-3 bg-gray-800 border rounded-lg text-yellow-100 focus:outline-none transition-colors ${
-                  errors.age ? 'border-red-500' : 'border-yellow-500/30 focus:border-yellow-400'
+                  errors.age ? 'border-red-500' : 'border-[#FFCB61]/30 focus:border-[#FFCB61]'
                 }`}
                 placeholder="Enter your age"
               />
@@ -245,14 +245,14 @@ const EnhancedRegistrationModal: React.FC<EnhancedRegistrationModalProps> = ({ e
             </div>
 
             <div>
-              <label className="block text-yellow-200 text-sm font-medium mb-2">
+              <label className="block text-[#77BEF0] text-sm font-medium mb-2">
                 How did you hear about us?
               </label>
               <select
                 name="source"
                 value={formData.source}
                 onChange={handleChange}
-                className="w-full px-4 py-3 bg-gray-800 border border-yellow-500/30 rounded-lg text-yellow-100 focus:border-yellow-400 focus:outline-none transition-colors"
+                className="w-full px-4 py-3 bg-gray-800 border border-[#FFCB61]/30 rounded-lg text-yellow-100 focus:border-[#FFCB61] focus:outline-none transition-colors"
               >
                 <option>Social Media</option>
                 <option>Friend or Colleague</option>
@@ -264,7 +264,7 @@ const EnhancedRegistrationModal: React.FC<EnhancedRegistrationModalProps> = ({ e
           </div>
 
           <div>
-            <label className="block text-yellow-200 text-sm font-medium mb-3">
+            <label className="block text-[#77BEF0] text-sm font-medium mb-3">
               Which events will you attend? *
             </label>
             <div className="grid grid-cols-2 md:grid-cols-4 gap-3">
@@ -275,9 +275,9 @@ const EnhancedRegistrationModal: React.FC<EnhancedRegistrationModalProps> = ({ e
                     type="checkbox"
                     checked={formData.events.includes(eventName)}
                     onChange={(e) => handleEventChange(eventName, e.target.checked)}
-                    className="h-4 w-4 text-yellow-600 border-yellow-500/30 rounded focus:ring-yellow-400"
+                    className="h-4 w-4 text-[#77BEF0] border-[#FFCB61]/30 rounded focus:ring-[#77BEF0]"
                   />
-                  <label htmlFor={`event-${eventName}`} className="ml-2 text-yellow-200 text-sm">
+                  <label htmlFor={`event-${eventName}`} className="ml-2 text-[#77BEF0] text-sm">
                     {eventName}
                   </label>
                 </div>
@@ -287,7 +287,7 @@ const EnhancedRegistrationModal: React.FC<EnhancedRegistrationModalProps> = ({ e
           </div>
 
           <div>
-            <label className="block text-yellow-200 text-sm font-medium mb-2">
+            <label className="block text-[#77BEF0] text-sm font-medium mb-2">
               Experience Level
             </label>
             <input
@@ -295,13 +295,13 @@ const EnhancedRegistrationModal: React.FC<EnhancedRegistrationModalProps> = ({ e
               name="experience"
               value={formData.experience}
               onChange={handleChange}
-              className="w-full px-4 py-3 bg-gray-800 border border-yellow-500/30 rounded-lg text-yellow-100 focus:border-yellow-400 focus:outline-none transition-colors"
+              className="w-full px-4 py-3 bg-gray-800 border border-[#FFCB61]/30 rounded-lg text-yellow-100 focus:border-[#FFCB61] focus:outline-none transition-colors"
               placeholder="Beginner, Intermediate, Advanced, Professional"
             />
           </div>
 
           <div>
-            <label className="block text-yellow-200 text-sm font-medium mb-2">
+            <label className="block text-[#77BEF0] text-sm font-medium mb-2">
               Special Requirements or Notes
             </label>
             <textarea
@@ -309,22 +309,22 @@ const EnhancedRegistrationModal: React.FC<EnhancedRegistrationModalProps> = ({ e
               value={formData.requirements}
               onChange={handleChange}
               rows={4}
-              className="w-full px-4 py-3 bg-gray-800 border border-yellow-500/30 rounded-lg text-yellow-100 focus:border-yellow-400 focus:outline-none transition-colors resize-none"
+              className="w-full px-4 py-3 bg-gray-800 border border-[#FFCB61]/30 rounded-lg text-yellow-100 focus:border-[#FFCB61] focus:outline-none transition-colors resize-none"
               placeholder="Any special requirements, dietary restrictions, accessibility needs, etc."
             />
           </div>
 
-          <div className="bg-gray-800 rounded-lg p-4 border border-yellow-500/20">
-            <h3 className="text-yellow-400 font-semibold mb-2">Selected Event: {event.title}</h3>
-            <p className="text-yellow-200 text-sm mb-2">{event.description}</p>
-            <p className="text-yellow-300 text-sm">
+          <div className="bg-gray-800 rounded-lg p-4 border border-[#FFCB61]/20">
+            <h3 className="text-[#FFCB61] font-semibold mb-2">Selected Event: {event.title}</h3>
+            <p className="text-[#77BEF0] text-sm mb-2">{event.description}</p>
+            <p className="text-[#FF894F] text-sm">
               <strong>Date:</strong> {event.date} • <strong>Time:</strong> {event.time} • <strong>Location:</strong> {event.location}
             </p>
           </div>
 
           <button
             type="submit"
-            className="w-full bg-yellow-500 text-gray-900 font-bold text-lg py-4 px-8 rounded-lg shadow-xl hover:bg-yellow-400 transition-all duration-300 transform hover:scale-105"
+            className="w-full bg-[#FFCB61] text-gray-900 font-bold text-lg py-4 px-8 rounded-lg shadow-xl hover:bg-[#FF894F] transition-all duration-300 transform hover:scale-105"
           >
             Register Now!
           </button>

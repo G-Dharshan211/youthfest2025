@@ -7,6 +7,7 @@ interface FormData {
   email: string;
   phone: string;
   college: string;
+  selectedEvent: string;
   events: string[];
   source: string;
 }
@@ -19,6 +20,7 @@ const HeroSection: React.FC = () => {
     email: "",
     phone: "",
     college: "",
+    selectedEvent: "",
     events: [],
     source: "Social Media",
   });
@@ -67,6 +69,7 @@ const HeroSection: React.FC = () => {
       email: "",
       phone: "",
       college: "",
+      selectedEvent: "",
       events: [],
       source: "Social Media",
     });
@@ -101,13 +104,13 @@ const HeroSection: React.FC = () => {
           <div className="animate-fade-in-up delay-1500 space-y-4">
             <button
               onClick={() => setShowRegistration(true)}
-              className="inline-block bg-yellow-500 text-gray-900 px-8 py-4 rounded-full font-bold text-lg hover:bg-yellow-400 transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-yellow-500/25 mr-4"
+              className="inline-block bg-[#FFCB61] text-gray-900 px-8 py-4 rounded-full font-bold text-lg hover:bg-[#FF894F] transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-[#FFCB61]/25 mr-4"
             >
               Register Now
             </button>
             <a
               href="#events"
-              className="inline-block bg-transparent border-2 border-yellow-500 text-yellow-500 px-8 py-4 rounded-full font-bold text-lg hover:bg-yellow-500 hover:text-gray-900 transition-all duration-300 transform hover:scale-105"
+              className="inline-block bg-transparent border-2 border-[#77BEF0] text-[#77BEF0] px-8 py-4 rounded-full font-bold text-lg hover:bg-[#77BEF0] hover:text-gray-900 transition-all duration-300 transform hover:scale-105"
             >
               Explore Events
             </a>
@@ -145,7 +148,7 @@ const HeroSection: React.FC = () => {
                       required
                       value={formData.name}
                       onChange={handleInputChange}
-                      className="w-full px-4 py-3 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-yellow-500 focus:border-transparent transition-all duration-300"
+                      className="w-full px-4 py-3 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-[#77BEF0] focus:border-transparent transition-all duration-300"
                     />
                   </div>
 
@@ -164,7 +167,7 @@ const HeroSection: React.FC = () => {
                       required
                       value={formData.email}
                       onChange={handleInputChange}
-                      className="w-full px-4 py-3 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-yellow-500 focus:border-transparent transition-all duration-300"
+                      className="w-full px-4 py-3 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-[#77BEF0] focus:border-transparent transition-all duration-300"
                     />
                   </div>
 
@@ -183,7 +186,7 @@ const HeroSection: React.FC = () => {
                       required
                       value={formData.phone}
                       onChange={handleInputChange}
-                      className="w-full px-4 py-3 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-yellow-500 focus:border-transparent transition-all duration-300"
+                      className="w-full px-4 py-3 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-[#77BEF0] focus:border-transparent transition-all duration-300"
                     />
                   </div>
 
@@ -201,12 +204,35 @@ const HeroSection: React.FC = () => {
                       name="college"
                       value={formData.college}
                       onChange={handleInputChange}
-                      className="w-full px-4 py-3 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-yellow-500 focus:border-transparent transition-all duration-300"
+                      className="w-full px-4 py-3 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-[#77BEF0] focus:border-transparent transition-all duration-300"
                     />
                   </div>
 
-                  {/* Events Checkboxes */}
+                  {/* Event Selection Dropdown */}
                   <div className="animate-fade-in-up delay-600">
+                    <label
+                      htmlFor="selectedEvent"
+                      className="block text-sm font-medium text-gray-700 mb-1"
+                    >
+                      Select Event
+                    </label>
+                    <select
+                      id="selectedEvent"
+                      name="selectedEvent"
+                      value={formData.selectedEvent || ''}
+                      onChange={handleInputChange}
+                      className="w-full px-4 py-3 rounded-lg border border-gray-300 bg-white focus:outline-none focus:ring-2 focus:ring-[#77BEF0] focus:border-transparent transition-all duration-300"
+                    >
+                      <option value="">Choose an event</option>
+                      <option value="Battle of Bands">Battle of Bands</option>
+                      <option value="Dance Championship">Dance Championship</option>
+                      <option value="Art Exhibition">Art Exhibition</option>
+                      <option value="Gaming Tournament">Gaming Tournament</option>
+                    </select>
+                  </div>
+
+                  {/* Events Checkboxes */}
+                  <div className="animate-fade-in-up delay-700">
                     <label className="block text-sm font-medium text-gray-700 mb-2">
                       Which events will you attend?
                     </label>
@@ -218,7 +244,7 @@ const HeroSection: React.FC = () => {
                           type="checkbox"
                           checked={formData.events.includes("Tech Workshop")}
                           onChange={handleCheckboxChange}
-                          className="h-4 w-4 text-yellow-600 border-gray-300 rounded focus:ring-yellow-500"
+                          className="h-4 w-4 text-[#77BEF0] border-gray-300 rounded focus:ring-[#77BEF0]"
                         />
                         <label htmlFor="event1" className="ml-3 text-gray-700">
                           Tech for Good Workshop
@@ -231,7 +257,7 @@ const HeroSection: React.FC = () => {
                           type="checkbox"
                           checked={formData.events.includes("Guest Session")}
                           onChange={handleCheckboxChange}
-                          className="h-4 w-4 text-yellow-600 border-gray-300 rounded focus:ring-yellow-500"
+                          className="h-4 w-4 text-[#77BEF0] border-gray-300 rounded focus:ring-[#77BEF0]"
                         />
                         <label htmlFor="event2" className="ml-3 text-gray-700">
                           Guest Speaker Session
@@ -244,7 +270,7 @@ const HeroSection: React.FC = () => {
                           type="checkbox"
                           checked={formData.events.includes("Networking Gala")}
                           onChange={handleCheckboxChange}
-                          className="h-4 w-4 text-yellow-600 border-gray-300 rounded focus:ring-yellow-500"
+                          className="h-4 w-4 text-[#77BEF0] border-gray-300 rounded focus:ring-[#77BEF0]"
                         />
                         <label htmlFor="event3" className="ml-3 text-gray-700">
                           Networking Gala
@@ -254,7 +280,7 @@ const HeroSection: React.FC = () => {
                   </div>
 
                   {/* Source Dropdown */}
-                  <div className="animate-fade-in-up delay-700">
+                  <div className="animate-fade-in-up delay-800">
                     <label
                       htmlFor="source"
                       className="block text-sm font-medium text-gray-700 mb-1"
@@ -266,7 +292,7 @@ const HeroSection: React.FC = () => {
                       name="source"
                       value={formData.source}
                       onChange={handleInputChange}
-                      className="w-full px-4 py-3 rounded-lg border border-gray-300 bg-white focus:outline-none focus:ring-2 focus:ring-yellow-500 focus:border-transparent transition-all duration-300"
+                      className="w-full px-4 py-3 rounded-lg border border-gray-300 bg-white focus:outline-none focus:ring-2 focus:ring-[#77BEF0] focus:border-transparent transition-all duration-300"
                     >
                       <option>Social Media</option>
                       <option>Friend or Colleague</option>
@@ -277,17 +303,17 @@ const HeroSection: React.FC = () => {
                   </div>
 
                   {/* Submit Button */}
-                  <div className="animate-fade-in-up delay-800 space-y-4">
+                  <div className="animate-fade-in-up delay-900 space-y-4">
                     <button
                       type="submit"
-                      className="w-full bg-yellow-600 text-white font-bold text-lg py-4 px-8 rounded-lg shadow-xl hover:bg-yellow-700 transition-all duration-300 transform hover:scale-105"
+                      className="w-full bg-[#FFCB61] text-gray-900 font-bold text-lg py-4 px-8 rounded-lg shadow-xl hover:bg-[#FF894F] transition-all duration-300 transform hover:scale-105"
                     >
                       Register Now!
                     </button>
                     <button
                       type="button"
                       onClick={() => setShowRegistration(false)}
-                      className="w-full bg-gray-600 text-white font-bold text-lg py-3 px-8 rounded-lg hover:bg-gray-700 transition-all duration-300"
+                      className="w-full bg-[#EA5B6F] text-white font-bold text-lg py-3 px-8 rounded-lg hover:bg-[#EA5B6F]/80 transition-all duration-300"
                     >
                       Back to Hero
                     </button>
@@ -308,7 +334,7 @@ const HeroSection: React.FC = () => {
                 </div>
                 <button
                   onClick={resetForm}
-                  className="bg-yellow-600 text-white font-bold text-lg py-3 px-8 rounded-lg hover:bg-yellow-700 transition-all duration-300 transform hover:scale-105"
+                  className="bg-[#FFCB61] text-gray-900 font-bold text-lg py-3 px-8 rounded-lg hover:bg-[#FF894F] transition-all duration-300 transform hover:scale-105"
                 >
                   Register Another Person
                 </button>

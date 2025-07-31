@@ -49,12 +49,12 @@ function App() {
       />
 
       {/* Footer */}
-      <footer className="bg-gray-900 border-t border-yellow-500/20 py-8 px-4">
+      <footer className="bg-gray-900 border-t border-[#FFCB61]/20 py-8 px-4">
         <div className="container mx-auto text-center">
-          <p className="text-yellow-200 mb-2">
+          <p className="text-[#77BEF0] mb-2">
             © 2025 Youth Fest. All rights reserved.
           </p>
-          <p className="text-yellow-400 text-sm">
+          <p className="text-[#FFCB61] text-sm">
             Empowering the next generation through creativity and innovation
           </p>
         </div>
