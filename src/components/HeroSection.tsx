@@ -76,22 +76,22 @@ const HeroSection: React.FC = () => {
   };
 
   return (
-    <section className="min-h-screen bg-gradient-to-br from-gray-900 via-black to-gray-800 flex items-center justify-center relative overflow-hidden">
+    <section className="min-h-screen bg-gradient-to-br from-[#1B3C53] via-[#1B3C53] to-[#456882] flex items-center justify-center relative overflow-hidden">
       {/* 3D Particle Background */}
       <ThreeBackground />
 
       {/* Animated background elements */}
       <div className="absolute inset-0">
-        <div className="absolute top-20 left-10 w-32 h-32 rounded-full animate-pulse" style={{ backgroundColor: '#77BEF0' + '1A' }}></div>
-        <div className="absolute bottom-20 right-10 w-48 h-48 rounded-full animate-pulse delay-1000" style={{ backgroundColor: '#FFCB61' + '0D' }}></div>
-        <div className="absolute top-1/2 left-1/4 w-20 h-20 rounded-full animate-bounce delay-500" style={{ backgroundColor: '#FF894F' + '14' }}></div>
+        <div className="absolute top-20 left-10 w-32 h-32 rounded-full animate-pulse" style={{ backgroundColor: '#D2C1B6' + '1A' }}></div>
+        <div className="absolute bottom-20 right-10 w-48 h-48 rounded-full animate-pulse delay-1000" style={{ backgroundColor: '#F9F3EF' + '0D' }}></div>
+        <div className="absolute top-1/2 left-1/4 w-20 h-20 rounded-full animate-bounce delay-500" style={{ backgroundColor: '#456882' + '14' }}></div>
       </div>
 
       {/* Hero content */}
       {!showRegistration ? (
         <div className="text-center space-y-8 px-4 pt-32 relative z-10">
                     <div className="animate-fade-in-up delay-1000">
-            <p className="text-lg md:text-xl max-w-2xl mx-auto leading-relaxed" style={{ color: '#77BEF0' + 'CC' }}>
+            <p className="text-lg md:text-xl max-w-2xl mx-auto leading-relaxed" style={{ color: '#F9F3EF' + 'CC' }}>
               Where young minds meet endless possibilities. Experience the biggest youth festival of the year with 
               competitions, workshops, and networking opportunities.
             </p>
@@ -104,13 +104,13 @@ const HeroSection: React.FC = () => {
           <div className="animate-fade-in-up delay-1500 space-y-4">
             <button
               onClick={() => setShowRegistration(true)}
-              className="inline-block bg-[#FFCB61] text-gray-900 px-8 py-4 rounded-full font-bold text-lg hover:bg-[#FF894F] transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-[#FFCB61]/25 mr-4"
+              className="inline-block bg-[#D2C1B6] text-[#1B3C53] px-8 py-4 rounded-full font-bold text-lg hover:bg-[#F9F3EF] transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-[#D2C1B6]/25 mr-4"
             >
               Register Now
             </button>
             <a
               href="#events"
-              className="inline-block bg-transparent border-2 border-[#77BEF0] text-[#77BEF0] px-8 py-4 rounded-full font-bold text-lg hover:bg-[#77BEF0] hover:text-gray-900 transition-all duration-300 transform hover:scale-105"
+              className="inline-block bg-transparent border-2 border-[#F9F3EF] text-[#F9F3EF] px-8 py-4 rounded-full font-bold text-lg hover:bg-[#F9F3EF] hover:text-[#1B3C53] transition-all duration-300 transform hover:scale-105"
             >
               Explore Events
             </a>
@@ -119,14 +119,14 @@ const HeroSection: React.FC = () => {
       ) : (
         /* Registration Form */
         <div className="relative z-10 w-full max-w-2xl mx-auto px-4 animate-fade-in-up">
-          <div className="bg-white p-8 md:p-12 rounded-2xl shadow-2xl">
+          <div className="bg-[#456882] p-8 md:p-12 rounded-2xl shadow-2xl">
             {!formSubmitted ? (
               <>
                 <div className="text-center mb-8">
-                  <h2 className="text-3xl md:text-4xl font-bold mb-2 text-gray-900">
+                  <h2 className="text-3xl md:text-4xl font-bold mb-2 text-[#F9F3EF]">
                     Join the Movement
                   </h2>
-                  <p className="text-gray-600">
+                  <p className="text-[#D2C1B6]">
                     Register for Youth Fest 2025 and be part of something
                     special.
                   </p>
@@ -137,7 +137,7 @@ const HeroSection: React.FC = () => {
                   <div className="animate-fade-in-up delay-200">
                     <label
                       htmlFor="name"
-                      className="block text-sm font-medium text-gray-700 mb-1"
+                      className="block text-sm font-medium text-[#F9F3EF] mb-1"
                     >
                       Full Name
                     </label>
@@ -148,7 +148,7 @@ const HeroSection: React.FC = () => {
                       required
                       value={formData.name}
                       onChange={handleInputChange}
-                      className="w-full px-4 py-3 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-[#77BEF0] focus:border-transparent transition-all duration-300"
+                      className="w-full px-4 py-3 rounded-lg border border-[#D2C1B6] bg-[#1B3C53] text-[#F9F3EF] focus:outline-none focus:ring-2 focus:ring-[#D2C1B6] focus:border-transparent transition-all duration-300"
                     />
                   </div>
 
@@ -156,7 +156,7 @@ const HeroSection: React.FC = () => {
                   <div className="animate-fade-in-up delay-300">
                     <label
                       htmlFor="email"
-                      className="block text-sm font-medium text-gray-700 mb-1"
+                      className="block text-sm font-medium text-[#F9F3EF] mb-1"
                     >
                       Email Address
                     </label>
@@ -167,7 +167,7 @@ const HeroSection: React.FC = () => {
                       required
                       value={formData.email}
                       onChange={handleInputChange}
-                      className="w-full px-4 py-3 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-[#77BEF0] focus:border-transparent transition-all duration-300"
+                      className="w-full px-4 py-3 rounded-lg border border-[#D2C1B6] bg-[#1B3C53] text-[#F9F3EF] focus:outline-none focus:ring-2 focus:ring-[#D2C1B6] focus:border-transparent transition-all duration-300"
                     />
                   </div>
 
@@ -175,7 +175,7 @@ const HeroSection: React.FC = () => {
                   <div className="animate-fade-in-up delay-400">
                     <label
                       htmlFor="phone"
-                      className="block text-sm font-medium text-gray-700 mb-1"
+                      className="block text-sm font-medium text-[#F9F3EF] mb-1"
                     >
                       Phone Number
                     </label>
@@ -186,7 +186,7 @@ const HeroSection: React.FC = () => {
                       required
                       value={formData.phone}
                       onChange={handleInputChange}
-                      className="w-full px-4 py-3 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-[#77BEF0] focus:border-transparent transition-all duration-300"
+                      className="w-full px-4 py-3 rounded-lg border border-[#D2C1B6] bg-[#1B3C53] text-[#F9F3EF] focus:outline-none focus:ring-2 focus:ring-[#D2C1B6] focus:border-transparent transition-all duration-300"
                     />
                   </div>
 
@@ -194,7 +194,7 @@ const HeroSection: React.FC = () => {
                   <div className="animate-fade-in-up delay-500">
                     <label
                       htmlFor="college"
-                      className="block text-sm font-medium text-gray-700 mb-1"
+                      className="block text-sm font-medium text-[#F9F3EF] mb-1"
                     >
                       College / Organization
                     </label>
@@ -204,7 +204,7 @@ const HeroSection: React.FC = () => {
                       name="college"
                       value={formData.college}
                       onChange={handleInputChange}
-                      className="w-full px-4 py-3 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-[#77BEF0] focus:border-transparent transition-all duration-300"
+                      className="w-full px-4 py-3 rounded-lg border border-[#D2C1B6] bg-[#1B3C53] text-[#F9F3EF] focus:outline-none focus:ring-2 focus:ring-[#D2C1B6] focus:border-transparent transition-all duration-300"
                     />
                   </div>
 
@@ -212,7 +212,7 @@ const HeroSection: React.FC = () => {
                   <div className="animate-fade-in-up delay-600">
                     <label
                       htmlFor="selectedEvent"
-                      className="block text-sm font-medium text-gray-700 mb-1"
+                      className="block text-sm font-medium text-[#F9F3EF] mb-1"
                     >
                       Select Event
                     </label>
@@ -221,7 +221,7 @@ const HeroSection: React.FC = () => {
                       name="selectedEvent"
                       value={formData.selectedEvent || ''}
                       onChange={handleInputChange}
-                      className="w-full px-4 py-3 rounded-lg border border-gray-300 bg-white focus:outline-none focus:ring-2 focus:ring-[#77BEF0] focus:border-transparent transition-all duration-300"
+                      className="w-full px-4 py-3 rounded-lg border border-[#D2C1B6] bg-[#1B3C53] text-[#F9F3EF] focus:outline-none focus:ring-2 focus:ring-[#D2C1B6] focus:border-transparent transition-all duration-300"
                     >
                       <option value="">Choose an event</option>
                       <option value="Battle of Bands">Battle of Bands</option>
@@ -234,6 +234,7 @@ const HeroSection: React.FC = () => {
                   {/* Events Checkboxes */}
                   <div className="animate-fade-in-up delay-700">
                     <label className="block text-sm font-medium text-gray-700 mb-2">
+                    <label className="block text-sm font-medium text-[#F9F3EF] mb-2">
                       Which events will you attend?
                     </label>
                     <div className="space-y-2">
@@ -244,9 +245,9 @@ const HeroSection: React.FC = () => {
                           type="checkbox"
                           checked={formData.events.includes("Tech Workshop")}
                           onChange={handleCheckboxChange}
-                          className="h-4 w-4 text-[#77BEF0] border-gray-300 rounded focus:ring-[#77BEF0]"
+                          className="h-4 w-4 text-[#D2C1B6] border-[#D2C1B6] rounded focus:ring-[#D2C1B6]"
                         />
-                        <label htmlFor="event1" className="ml-3 text-gray-700">
+                        <label htmlFor="event1" className="ml-3 text-[#F9F3EF]">
                           Tech for Good Workshop
                         </label>
                       </div>
@@ -257,9 +258,9 @@ const HeroSection: React.FC = () => {
                           type="checkbox"
                           checked={formData.events.includes("Guest Session")}
                           onChange={handleCheckboxChange}
-                          className="h-4 w-4 text-[#77BEF0] border-gray-300 rounded focus:ring-[#77BEF0]"
+                          className="h-4 w-4 text-[#D2C1B6] border-[#D2C1B6] rounded focus:ring-[#D2C1B6]"
                         />
-                        <label htmlFor="event2" className="ml-3 text-gray-700">
+                        <label htmlFor="event2" className="ml-3 text-[#F9F3EF]">
                           Guest Speaker Session
                         </label>
                       </div>
@@ -270,9 +271,9 @@ const HeroSection: React.FC = () => {
                           type="checkbox"
                           checked={formData.events.includes("Networking Gala")}
                           onChange={handleCheckboxChange}
-                          className="h-4 w-4 text-[#77BEF0] border-gray-300 rounded focus:ring-[#77BEF0]"
+                          className="h-4 w-4 text-[#D2C1B6] border-[#D2C1B6] rounded focus:ring-[#D2C1B6]"
                         />
-                        <label htmlFor="event3" className="ml-3 text-gray-700">
+                        <label htmlFor="event3" className="ml-3 text-[#F9F3EF]">
                           Networking Gala
                         </label>
                       </div>
@@ -283,7 +284,7 @@ const HeroSection: React.FC = () => {
                   <div className="animate-fade-in-up delay-800">
                     <label
                       htmlFor="source"
-                      className="block text-sm font-medium text-gray-700 mb-1"
+                      className="block text-sm font-medium text-[#F9F3EF] mb-1"
                     >
                       How did you hear about us?
                     </label>
@@ -292,7 +293,7 @@ const HeroSection: React.FC = () => {
                       name="source"
                       value={formData.source}
                       onChange={handleInputChange}
-                      className="w-full px-4 py-3 rounded-lg border border-gray-300 bg-white focus:outline-none focus:ring-2 focus:ring-[#77BEF0] focus:border-transparent transition-all duration-300"
+                      className="w-full px-4 py-3 rounded-lg border border-[#D2C1B6] bg-[#1B3C53] text-[#F9F3EF] focus:outline-none focus:ring-2 focus:ring-[#D2C1B6] focus:border-transparent transition-all duration-300"
                     >
                       <option>Social Media</option>
                       <option>Friend or Colleague</option>
@@ -306,14 +307,14 @@ const HeroSection: React.FC = () => {
                   <div className="animate-fade-in-up delay-900 space-y-4">
                     <button
                       type="submit"
-                      className="w-full bg-[#FFCB61] text-gray-900 font-bold text-lg py-4 px-8 rounded-lg shadow-xl hover:bg-[#FF894F] transition-all duration-300 transform hover:scale-105"
+                      className="w-full bg-[#D2C1B6] text-[#1B3C53] font-bold text-lg py-4 px-8 rounded-lg shadow-xl hover:bg-[#F9F3EF] transition-all duration-300 transform hover:scale-105"
                     >
                       Register Now!
                     </button>
                     <button
                       type="button"
                       onClick={() => setShowRegistration(false)}
-                      className="w-full bg-[#EA5B6F] text-white font-bold text-lg py-3 px-8 rounded-lg hover:bg-[#EA5B6F]/80 transition-all duration-300"
+                      className="w-full bg-[#1B3C53] text-[#F9F3EF] font-bold text-lg py-3 px-8 rounded-lg hover:bg-[#1B3C53]/80 transition-all duration-300"
                     >
                       Back to Hero
                     </button>
@@ -323,18 +324,18 @@ const HeroSection: React.FC = () => {
             ) : (
               /* Success Message */
               <div className="text-center animate-fade-in-up">
-                <div className="mb-6 p-6 bg-green-100 text-green-800 border-l-4 border-green-500 rounded-lg">
-                  <h3 className="text-xl font-bold mb-2">
+                <div className="mb-6 p-6 bg-[#D2C1B6]/20 text-[#F9F3EF] border-l-4 border-[#D2C1B6] rounded-lg">
+                  <h3 className="text-xl font-bold mb-2 text-[#F9F3EF]">
                     Registration Successful! 🎉
                   </h3>
-                  <p>
+                  <p className="text-[#D2C1B6]">
                     Thank you for registering! We've sent a confirmation to your
                     email.
                   </p>
                 </div>
                 <button
                   onClick={resetForm}
-                  className="bg-[#FFCB61] text-gray-900 font-bold text-lg py-3 px-8 rounded-lg hover:bg-[#FF894F] transition-all duration-300 transform hover:scale-105"
+                  className="bg-[#D2C1B6] text-[#1B3C53] font-bold text-lg py-3 px-8 rounded-lg hover:bg-[#F9F3EF] transition-all duration-300 transform hover:scale-105"
                 >
                   Register Another Person
                 </button>

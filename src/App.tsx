@@ -34,7 +34,7 @@ function App() {
   };
 
   return (
-    <div className="bg-black text-white overflow-x-hidden">
+    <div className="bg-[#1B3C53] text-[#F9F3EF] overflow-x-hidden">
       <Header />
       <HeroSection />
       <div id="events">
@@ -49,12 +49,12 @@ function App() {
       />
 
       {/* Footer */}
-      <footer className="bg-gray-900 border-t border-[#FFCB61]/20 py-8 px-4">
+      <footer className="bg-[#456882] border-t border-[#D2C1B6]/20 py-8 px-4">
         <div className="container mx-auto text-center">
-          <p className="text-[#77BEF0] mb-2">
+          <p className="text-[#F9F3EF] mb-2">
             © 2025 Youth Fest. All rights reserved.
           </p>
-          <p className="text-[#FFCB61] text-sm">
+          <p className="text-[#D2C1B6] text-sm">
             Empowering the next generation through creativity and innovation
           </p>
         </div>

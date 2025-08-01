@@ -157,13 +157,13 @@ const EventsSection: React.FC<EventsSectionProps> = ({ onRegister }) => {
   }, []);
 
   return (
-    <section className="py-20 px-4 bg-gray-900">
+    <section className="py-20 px-4 bg-[#1B3C53]">
       <div className="container mx-auto">
         <div className="text-center mb-16">
-          <h2 className="text-4xl md:text-6xl font-bold text-[#FFCB61] mb-4">
+          <h2 className="text-4xl md:text-6xl font-bold text-[#D2C1B6] mb-4">
             Featured Events
           </h2>
-          <p className="text-[#77BEF0] text-lg max-w-3xl mx-auto">
+          <p className="text-[#F9F3EF] text-lg max-w-3xl mx-auto">
             Discover amazing events and competitions designed to showcase your talents and connect with like-minded youth
           </p>
         </div>
